@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <div class="center-container">
+            <section>
+                <h1>Contactformulier</h1>
+                <form action="contact-bedankt.html">
+                    <div class="formfield">
+                        <label for="name">Naam*</label>
+                        <input type="text" name="name" id="name" placeholder="Voer volledige naam in" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="e-mail">E-mail*</label>
+                        <input type="email" name="e-mail" id="e-mail" placeholder="Voer e-mailadres in" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="residence">Woonplaats*</label>
+                        <input type="text" name="residence" id="residence" placeholder="Voer woonplaats in" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="bday">Geboortedatum*</label>
+                        <input type="date" name="bday" id="bday" placeholder="dd-mm-jjjj" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="teacher">Verstuur naar*</label>
+                        <select name="teacher" id="teacher" required>
+                            <option value="" disabled selected>Kies docent...</option>
+                            <option value="Antwan">Antwan</option>
+                            <option value="Bas">Bas</option>
+                            <option value="Erik">Erik</option>
+                            <option value="Martijn">Martijn</option>
+                        </select>
+                    </div>
+                    <div class="formfield">
+                        <span class="label">Categorie*</span>
+                        <div>
+                            <input type="radio" name="category" id="general" value="programming" checked>
+                            <label for="general">Algemeen</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="category" id="programming" value="programming">
+                            <label for="programming">Programmeren</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="cle" name="menu" value="cle">
+                            <label for="cle">CLE</label>
+                        </div>
+                    </div>
+
+                    <label for="question">Jouw vraag*</label>
+                    <textarea name="question" id="question" cols="30" rows="3" required></textarea>
+                    <div>
+                        <input type="checkbox" id="terms" name="terms" value="Terms" required>
+                        <label for="terms">Ik ga akkoord met de algemene voorwaarden*</label>
+                    </div>
+                    <button class="submit-button" type="submit">Verstuur e-mail</button>
+                </form>
+                <p>* Verplichte velden</p>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
